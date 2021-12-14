@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Blake's load method</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+        
+    <div class="container">
+      <!-- include header -->
+      <div class="header-include"></div>
+      <section><h1>Section</h1></section>
+      <!-- include footer -->
+      <div class="footer-include"></div>
+    </div>
+    <script>
+      $('.header-include').load('header.html')
+      $('.footer-include').load('footer.html')
+      $('header h1').click(function(){
+        alert('Hello World')
+      })
+    </script>
+    
+  </body>
+</html>

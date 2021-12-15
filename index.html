@@ -17,12 +17,14 @@
       <!-- include footer -->
       <div class="footer-include"></div>
     </div>
+    
     <script>
-      $('.header-include').load('header.html')
-      $('.footer-include').load('footer.html')
-      $('header h1').click(function(){
-        alert('Hello World')
+      $('.header-include').load('header.html',function(){
+        $('header h1').click(function(){
+          alert('Hello World')
+       })
       })
+      $('.footer-include').load('footer.html')
     </script>
     
   </body>
